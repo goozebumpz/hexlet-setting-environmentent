@@ -1,7 +1,8 @@
 package main
 
-import "fmt"
+import "github.com/fatih/color" // Указываем путь до нужного пакета внутри репозитория
 
 func main() {
-	fmt.Println("Hello hexlet")
+	red := color.New(color.FgRed).PrintFunc()
+	red("Warning")
 }
